@@ -5,7 +5,7 @@
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/blob/master/LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/chrony.svg)](https://hub.docker.com/r/alvistack/chrony/)
 
-chrony is a versatile implementation of the Network Time Protocol (NTP).
+Chrony is a versatile implementation of the Network Time Protocol (NTP).
 
 Learn more about Chrony: <https://chrony.tuxfamily.org/>
 
