@@ -4,6 +4,7 @@
 
 ### Major Changes
 
+  - Upgrade minimal Ansible support to 2.9.0
   - Default with Python 3
 
 ## 3.2-0alvistack1 - 2019-09-10
