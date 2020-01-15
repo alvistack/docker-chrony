@@ -4,6 +4,13 @@
 
 ### Major Changes
 
+## 3.2-3alvistack1 - 2020-01-15
+
+### Major Changes
+
+  - Replace `dumb-init` with `tini`, as like as `docker --init`
+  - Include release specific vars and tasks
+
 ## 3.2-2alvistack3 - 2019-11-05
 
 ### Major Changes
