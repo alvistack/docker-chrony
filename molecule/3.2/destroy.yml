@@ -14,19 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- hosts: all
-  remote_user: root
-  roles:
-    - role: bootstrap
-    - role: locales
-    - role: timezone
-    - role: python
-    - role: ansible
-    - role: tini
-    - role: gosu
-
-- hosts: all
-  remote_user: root
-  roles:
-    - role: chrony
-    - role: localhost
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: docker rm
+      docker_container:
+        name: "{{ item.name }}"
+        state: "absent"
+      loop_control:
+        label: "{{ item.name }}"
+      loop: "{{ molecule_yml.platforms }}"
