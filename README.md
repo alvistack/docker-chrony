@@ -11,12 +11,17 @@ Learn more about Chrony: <https://chrony.tuxfamily.org/>
 
 ## Supported Tags and Respective `Dockerfile` Links
 
-  - [`latest` (master/Dockerfile)](https://github.com/alvistack/docker-chrony/blob/master/Dockerfile)
-  - [`3.2` (3.2/Dockerfile)](https://github.com/alvistack/docker-chrony/blob/3.2/Dockerfile)
+  - [`3.2`, `latest`](https://github.com/alvistack/docker-chrony/blob/master/molecule/3.2/Dockerfile.j2)
 
 ## Overview
 
 This Docker container makes it easy to get an instance of Chrony up and running.
+
+Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
+
+  - Minimized `Dockerfile` for meta data definition
+  - Provision by Ansible and Molecule Docker driver in single layer
+  - Handle `ENTRYPOINT` with [tini](https://github.com/krallin/tini)
 
 ### Quick Start
 
