@@ -51,7 +51,9 @@ Start Chrony:
 
 ## Versioning
 
-The `latest` tag matches the most recent version of this repository. Thus using `alvistack/chrony:latest` or `alvistack/chrony` will ensure you are running the most up to date version of this image.
+The `latest` tag matches the most recent [GitHub Release](https://github.com/alvistack/docker-chrony/releases) of this repository. Thus using `alvistack/chrony:latest` or `alvistack/chrony` will ensure you are running the most up to date stable version of this image.
+
+Other tags are rolling release rebuild by [Travis](https://travis-ci.org/alvistack/docker-chrony) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
 
 ## License
 
