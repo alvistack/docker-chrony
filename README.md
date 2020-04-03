@@ -1,6 +1,6 @@
 # Docker Image Packaging for Chrony
 
-[![Travis](https://img.shields.io/travis/alvistack/docker-chrony.svg)](https://travis-ci.org/alvistack/docker-chrony)
+[![Travis](https://img.shields.io/travis/com/alvistack/docker-chrony.svg)](https://travis-ci.com/alvistack/docker-chrony)
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/blob/master/LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/chrony.svg)](https://hub.docker.com/r/alvistack/chrony/)
@@ -57,7 +57,7 @@ The `latest` tag matches the most recent [GitHub Release](https://github.com/alv
 
 ### `alvistack/chrony:<version>`
 
-The version tags are rolling release rebuild by [Travis](https://travis-ci.org/alvistack/docker-chrony) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
+The version tags are rolling release rebuild by [Travis](https://travis-ci.com/alvistack/docker-chrony) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
 
 ## License
 
