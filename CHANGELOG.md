@@ -4,11 +4,11 @@
 
 ### Major Changes
 
-## 3.2-4alvistack7 - 2020-04-11
+## 3.2-4alvistack8 - 2020-04-11
 
 ### Major Changes
 
-  - Debug build
+  - Provision with systemd support
 
 ## 3.2-4alvistack4 - 2020-03-05
 
