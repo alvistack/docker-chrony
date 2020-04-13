@@ -11,7 +11,7 @@ Learn more about Chrony: <https://chrony.tuxfamily.org/>
 
 ## Supported Tags and Respective `Dockerfile` Links
 
-  - [`3.2`, `latest`](https://github.com/alvistack/docker-chrony/blob/master/molecule/3.2/Dockerfile.j2)
+  - [`3.5`, `latest`](https://github.com/alvistack/docker-chrony/blob/master/molecule/3.5/Dockerfile.j2)
 
 ## Overview
 
