@@ -1,9 +1,15 @@
 # Docker Image Packaging for Chrony
 
-## 3.2-XalvistackY - TBC
+## 3.5-XalvistackY - TBC
 
 ### Major Changes
 
+## 3.5-4alvistack7 - 2020-06-10
+
+### Major Changes
+
+  - Revamp `create`, `side_effect`, `verify` and `destroy` logic
+  - Replace `tini` with `catatonit`
   - Rename `post_tasks.yml` as `side_effect.yml`
   - Upgrade base image to Ubuntu 20.04
 
