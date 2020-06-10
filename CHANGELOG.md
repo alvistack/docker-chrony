@@ -1,6 +1,10 @@
 # Docker Image Packaging for Chrony
 
-## 3.2-XalvistackY - TBC
+## 3.5-XalvistackY - TBC
+
+### Major Changes
+
+## 3.5-4alvistack7 - 2020-06-10
 
 ### Major Changes
 
