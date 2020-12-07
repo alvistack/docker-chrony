@@ -11,7 +11,7 @@ Learn more about Chrony: <https://chrony.tuxfamily.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`3.5`, `latest`](https://github.com/alvistack/docker-chrony/blob/master/packer/3.5/packer.json)
+  - [`3.5`, `latest`](https://github.com/alvistack/docker-chrony/blob/master/packer/docker-3.5/packer.json)
 
 ## Overview
 
