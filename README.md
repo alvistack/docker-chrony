@@ -1,9 +1,9 @@
 # Docker Image Packaging for Chrony
 
-[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-chrony/master)](https://gitlab.com/alvistack/docker-chrony/-/pipelines)
+[![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-chrony/master)](https://gitlab.com/alvistack/docker-chrony/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/blob/master/LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/chrony.svg)](https://hub.docker.com/r/alvistack/chrony/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/chrony-3.5.svg)](https://hub.docker.com/r/alvistack/chrony-3.5)
 
 Chrony is a versatile implementation of the Network Time Protocol (NTP).
 
@@ -11,7 +11,8 @@ Learn more about Chrony: <https://chrony.tuxfamily.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`3.5`, `latest`](https://github.com/alvistack/docker-chrony/blob/master/packer/docker-3.5/packer.json)
+  - [`alvistack/chrony-3.5`](https://hub.docker.com/r/alvistack/chrony-3.5)
+      - [`packer/docker-3.5/packer.json`](https://github.com/alvistack/docker-chrony/blob/master/packer/docker-3.5/packer.json)
 
 ## Overview
 
@@ -50,13 +51,13 @@ Start Chrony:
 
 ## Versioning
 
-### `alvistack/chrony:latest`
+### `YYYYMMDD.Y.Z`
 
-The `latest` tag matches the most recent [GitHub Release](https://github.com/alvistack/docker-chrony/releases) of this repository. Thus using `alvistack/chrony:latest` or `alvistack/chrony` will ensure you are running the most up to date stable version of this image.
+Release tags could be find from [GitHub Release](https://github.com/alvistack/docker-ansible/releases) of this repository. Thus using these tags will ensure you are running the most up to date stable version of this image.
 
-### `alvistack/chrony:<version>`
+### `YYYYMMDD.0.0`
 
-The version tags are rolling release rebuild by [Travis](https://travis-ci.com/alvistack/docker-chrony) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
+Version tags ended with `.0.0` are rolling release rebuild by [GitLab pipeline](https://gitlab.com/alvistack/docker-ansible/-/pipelines) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
 
 ## License
 
