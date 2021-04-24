@@ -28,7 +28,7 @@ Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with s
 Start Chrony:
 
     # Pull latest image
-    docker pull alvistack/chrony
+    docker pull alvistack/chrony-3.5
     
     # Run as detach
     docker run \
@@ -36,7 +36,7 @@ Start Chrony:
         --cap-add SYS_TIME \
         --name chrony \
         --publish 123:123/udp \
-        alvistack/chrony
+        alvistack/chrony-3.5
     
     # Run with custom /etc/chrony/chrony.conf
     docker run \
@@ -45,7 +45,7 @@ Start Chrony:
         --name chrony \
         --publish 123:123/udp \
         --volume /etc/chrony/chrony.conf:/etc/chrony/chrony.conf \
-        alvistack/chrony
+        alvistack/chrony-3.5
 
 **Success**. Chrony is now available on port `123/udp`.
 
