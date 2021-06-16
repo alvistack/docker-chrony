@@ -4,7 +4,9 @@
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/blob/master/LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/chrony-3.5.svg)](https://hub.docker.com/r/alvistack/chrony-3.5)
+
 Chrony is a versatile implementation of the Network Time Protocol (NTP).
+
 Learn more about Chrony: <https://chrony.tuxfamily.org/>
 
 ## Supported Tags and Respective Packer Template Links
@@ -15,6 +17,7 @@ Learn more about Chrony: <https://chrony.tuxfamily.org/>
 ## Overview
 
 This Docker container makes it easy to get an instance of Chrony up and running.
+
 Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 
   - Packaging by Packer Docker builder and Ansible provisioner in single layer
@@ -23,23 +26,27 @@ Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with s
 ### Quick Start
 
 Start Chrony:
-\# Pull latest image
-docker pull alvistack/chrony-3.5
-\# Run as detach
-docker run   
-\-itd   
-\--cap-add SYS\_TIME   
-\--name chrony   
-\--publish 123:123/udp   
-alvistack/chrony-3.5
-\# Run with custom /etc/chrony/chrony.conf
-docker run   
-\-itd   
-\--cap-add SYS\_TIME   
-\--name chrony   
-\--publish 123:123/udp   
-\--volume /etc/chrony/chrony.conf:/etc/chrony/chrony.conf   
-alvistack/chrony-3.5
+
+    # Pull latest image
+    docker pull alvistack/chrony-3.5
+    
+    # Run as detach
+    docker run \
+        -itd \
+        --cap-add SYS_TIME \
+        --name chrony \
+        --publish 123:123/udp \
+        alvistack/chrony-3.5
+    
+    # Run with custom /etc/chrony/chrony.conf
+    docker run \
+        -itd \
+        --cap-add SYS_TIME \
+        --name chrony \
+        --publish 123:123/udp \
+        --volume /etc/chrony/chrony.conf:/etc/chrony/chrony.conf \
+        alvistack/chrony-3.5
+
 **Success**. Chrony is now available on port `123/udp`.
 
 ## Versioning
