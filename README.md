@@ -1,13 +1,9 @@
 # Docker Image Packaging for Chrony
 
-[![GitLab pipeline
-status](https://img.shields.io/gitlab/pipeline/alvistack/docker-chrony/master)](https://gitlab.com/alvistack/docker-chrony/-/pipelines)
-[![GitHub
-release](https://img.shields.io/github/release/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/releases)
-[![GitHub
-license](https://img.shields.io/github/license/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/blob/master/LICENSE)
-[![Docker
-Pulls](https://img.shields.io/docker/pulls/alvistack/chrony-3.5.svg)](https://hub.docker.com/r/alvistack/chrony-3.5)
+[![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-chrony/master)](https://gitlab.com/alvistack/docker-chrony/-/pipelines)
+[![GitHub release](https://img.shields.io/github/release/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/releases)
+[![GitHub license](https://img.shields.io/github/license/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/blob/master/LICENSE)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/chrony-3.5.svg)](https://hub.docker.com/r/alvistack/chrony-3.5)
 
 Chrony is a versatile implementation of the Network Time Protocol (NTP).
 
@@ -20,16 +16,12 @@ Learn more about Chrony: <https://chrony.tuxfamily.org/>
 
 ## Overview
 
-This Docker container makes it easy to get an instance of Chrony up and
-running.
+This Docker container makes it easy to get an instance of Chrony up and running.
 
-Based on [Official Ubuntu Docker
-Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
+Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 
-  - Packaging by Packer Docker builder and Ansible provisioner in single
-    layer
-  - Handle `ENTRYPOINT` with
-    [catatonit](https://github.com/openSUSE/catatonit)
+  - Packaging by Packer Docker builder and Ansible provisioner in single layer
+  - Handle `ENTRYPOINT` with [catatonit](https://github.com/openSUSE/catatonit)
 
 ### Quick Start
 
@@ -61,23 +53,16 @@ Start Chrony:
 
 ### `YYYYMMDD.Y.Z`
 
-Release tags could be find from [GitHub
-Release](https://github.com/alvistack/docker-chrony/releases) of this
-repository. Thus using these tags will ensure you are running the most
-up to date stable version of this image.
+Release tags could be find from [GitHub Release](https://github.com/alvistack/docker-chrony/releases) of this repository. Thus using these tags will ensure you are running the most up to date stable version of this image.
 
 ### `YYYYMMDD.0.0`
 
-Version tags ended with `.0.0` are rolling release rebuild by [GitLab
-pipeline](https://gitlab.com/alvistack/docker-chrony/-/pipelines) in
-weekly basis. Thus using these tags will ensure you are running the
-latest packages provided by the base image project.
+Version tags ended with `.0.0` are rolling release rebuild by [GitLab pipeline](https://gitlab.com/alvistack/docker-chrony/-/pipelines) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
 
 ## License
 
   - Code released under [Apache License 2.0](LICENSE)
-  - Docs released under [CC BY
-    4.0](http://creativecommons.org/licenses/by/4.0/)
+  - Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ## Author Information
 
