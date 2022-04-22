@@ -104,27 +104,27 @@ default:
   before_script:
     - *script-git-submodule
 
-build:docker-3.5:
+build:docker-4.2:
   <<: *job-packer-build
   stage: build
   cache:
-    key: "$CI_PIPELINE_ID-docker-3.5"
+    key: "$CI_PIPELINE_ID-docker-4.2"
     paths:
       - packer/*/output-docker
   variables:
     _PACKER_BUILDER_PROVIDER: "docker"
-    _PACKER_BUILDER_VERSION: "3.5"
+    _PACKER_BUILDER_VERSION: "4.2"
 
-deploy:docker-3.5:
+deploy:docker-4.2:
   <<: *job-docker-push
   stage: deploy
   cache:
-    key: "$CI_PIPELINE_ID-docker-3.5"
+    key: "$CI_PIPELINE_ID-docker-4.2"
     paths:
       - packer/*/output-docker
     policy: pull
   variables:
     _PACKER_BUILDER_PROVIDER: "docker"
-    _PACKER_BUILDER_VERSION: "3.5"
+    _PACKER_BUILDER_VERSION: "4.2"
   needs:
-    - build:docker-3.5
+    - build:docker-4.2

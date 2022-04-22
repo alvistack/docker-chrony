@@ -5,7 +5,7 @@
 [![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-chrony/master)](https://gitlab.com/alvistack/docker-chrony/-/pipelines)
 [![GitHub tag](https://img.shields.io/github/tag/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/tags)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/blob/master/LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/chrony-3.5.svg)](https://hub.docker.com/r/alvistack/chrony-3.5)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/chrony-4.2.svg)](https://hub.docker.com/r/alvistack/chrony-4.2)
 
 Chrony is a versatile implementation of the Network Time Protocol (NTP).
 
@@ -13,8 +13,8 @@ Learn more about Chrony: <https://chrony.tuxfamily.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`alvistack/chrony-3.5`](https://hub.docker.com/r/alvistack/chrony-3.5)
-      - [`packer/docker-3.5/packer.json`](https://github.com/alvistack/docker-chrony/blob/master/packer/docker-3.5/packer.json)
+  - [`alvistack/chrony-4.2`](https://hub.docker.com/r/alvistack/chrony-4.2)
+      - [`packer/docker-4.2/packer.json`](https://github.com/alvistack/docker-chrony/blob/master/packer/docker-4.2/packer.json)
 
 ## Overview
 
@@ -30,7 +30,7 @@ Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with s
 Start Chrony:
 
     # Pull latest image
-    docker pull alvistack/chrony-3.5
+    docker pull alvistack/chrony-4.2
     
     # Run as detach
     docker run \
@@ -38,7 +38,7 @@ Start Chrony:
         --cap-add SYS_TIME \
         --name chrony \
         --publish 123:123/udp \
-        alvistack/chrony-3.5
+        alvistack/chrony-4.2
     
     # Run with custom /etc/chrony/chrony.conf
     docker run \
@@ -47,7 +47,7 @@ Start Chrony:
         --name chrony \
         --publish 123:123/udp \
         --volume /etc/chrony/chrony.conf:/etc/chrony/chrony.conf \
-        alvistack/chrony-3.5
+        alvistack/chrony-4.2
 
 **Success**. Chrony is now available on port `123/udp`.
 
