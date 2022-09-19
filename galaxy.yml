@@ -15,7 +15,7 @@
 # limitations under the License.
 
 namespace: alvistack
-name: docker-chrony
+name: chrony
 description: Docker Image Packaging for Chrony
 
 version: 0.0.0
