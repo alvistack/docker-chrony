@@ -13,8 +13,8 @@ Learn more about Chrony: <https://chrony.tuxfamily.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`alvistack/chrony-4.2`](https://hub.docker.com/r/alvistack/chrony-4.2)
-      - [`packer/docker-4.2/packer.json`](https://github.com/alvistack/docker-chrony/blob/master/packer/docker-4.2/packer.json)
+-   [`alvistack/chrony-4.2`](https://hub.docker.com/r/alvistack/chrony-4.2)
+    -   [`packer/docker-4.2/packer.json`](https://github.com/alvistack/docker-chrony/blob/master/packer/docker-4.2/packer.json)
 
 ## Overview
 
@@ -22,8 +22,8 @@ This Docker container makes it easy to get an instance of Chrony up and running.
 
 Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 
-  - Packaging by Packer Docker builder and Ansible provisioner in single layer
-  - Handle `ENTRYPOINT` with [catatonit](https://github.com/openSUSE/catatonit)
+-   Packaging by Packer Docker builder and Ansible provisioner in single layer
+-   Handle `ENTRYPOINT` with [catatonit](https://github.com/openSUSE/catatonit)
 
 ### Quick Start
 
@@ -31,7 +31,7 @@ Start Chrony:
 
     # Pull latest image
     docker pull alvistack/chrony-4.2
-    
+
     # Run as detach
     docker run \
         -itd \
@@ -39,7 +39,7 @@ Start Chrony:
         --name chrony \
         --publish 123:123/udp \
         alvistack/chrony-4.2
-    
+
     # Run with custom /etc/chrony/chrony.conf
     docker run \
         -itd \
@@ -63,11 +63,11 @@ Version tags ended with `.0.0` are rolling release rebuild by [GitLab pipeline](
 
 ## License
 
-  - Code released under [Apache License 2.0](LICENSE)
-  - Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+-   Code released under [Apache License 2.0](LICENSE)
+-   Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ## Author Information
 
-  - Wong Hoi Sing Edison
-      - <https://twitter.com/hswong3i>
-      - <https://github.com/hswong3i>
+-   Wong Hoi Sing Edison
+    -   <https://twitter.com/hswong3i>
+    -   <https://github.com/hswong3i>
