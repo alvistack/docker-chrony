@@ -15,5 +15,5 @@
 # limitations under the License.
 
 chrony_access_control_commands:
-  - "allow 0/0"
-  - "allow ::/0"
+  - allow 0/0
+  - allow ::/0
