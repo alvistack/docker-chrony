@@ -9,7 +9,7 @@ tag](https://img.shields.io/github/tag/alvistack/docker-chrony.svg)](https://git
 [![GitHub
 license](https://img.shields.io/github/license/alvistack/docker-chrony.svg)](https://github.com/alvistack/docker-chrony/blob/master/LICENSE)
 [![Docker
-Pulls](https://img.shields.io/docker/pulls/alvistack/chrony-4.2.svg)](https://hub.docker.com/r/alvistack/chrony-4.2)
+Pulls](https://img.shields.io/docker/pulls/alvistack/chrony-4.5.svg)](https://hub.docker.com/r/alvistack/chrony-4.5)
 
 Chrony is a versatile implementation of the Network Time Protocol (NTP).
 
@@ -17,8 +17,8 @@ Learn more about Chrony: <https://chrony.tuxfamily.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
--   [`alvistack/chrony-4.2`](https://hub.docker.com/r/alvistack/chrony-4.2)
-    -   [`packer/docker-4.2/packer.json`](https://github.com/alvistack/docker-chrony/blob/master/packer/docker-4.2/packer.json)
+-   [`alvistack/chrony-4.5`](https://hub.docker.com/r/alvistack/chrony-4.5)
+    -   [`packer/docker-4.5/packer.json`](https://github.com/alvistack/docker-chrony/blob/master/packer/docker-4.5/packer.json)
 
 ## Overview
 
@@ -38,7 +38,7 @@ Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 Start Chrony:
 
     # Pull latest image
-    docker pull alvistack/chrony-4.2
+    docker pull alvistack/chrony-4.5
 
     # Run as detach
     docker run \
@@ -46,7 +46,7 @@ Start Chrony:
         --cap-add SYS_TIME \
         --name chrony \
         --publish 123:123/udp \
-        alvistack/chrony-4.2
+        alvistack/chrony-4.5
 
     # Run with custom /etc/chrony/chrony.conf
     docker run \
@@ -55,7 +55,7 @@ Start Chrony:
         --name chrony \
         --publish 123:123/udp \
         --volume /etc/chrony/chrony.conf:/etc/chrony/chrony.conf \
-        alvistack/chrony-4.2
+        alvistack/chrony-4.5
 
 **Success**. Chrony is now available on port `123/udp`.
 
